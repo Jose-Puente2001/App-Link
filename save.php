@@ -1,4 +1,4 @@
-<?php require_once 'db.php' ?>
+<?php require_once 'db.php'; ?>
 
 <?php
 
@@ -14,6 +14,9 @@ if(isset($_POST['save_app'])){
    if(!result){
    	   die('fallied');
    }
+   
+   $_SESSION['message'] = "Note created successfully";
+   $_SESSION['message_type'] = "success";
 
    header("Location: index.php");
 }
