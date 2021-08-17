@@ -21,11 +21,24 @@ $query = "SELECT * FROM link";
 $result = mysqli_query($connection, $query);
 
 while($row = mysqli_fetch_array($result)){?>
-
-      <h1><?php echo $row['name']?></h1>
-      <a href="edit.php?id=<?php echo $row['id']?>">edit</a>
-      <a href="delete.php?id=<?php echo $row['id']?>">delete</a>
-      <h1><?php echo $row['link']?></h1>
+    <table class="table table-bordered table-hover">
+      	<thead>
+      		<tr>
+      			<th scope="col">Name</th>
+      			<th scope="col">Link</th>
+      			<th scope="col">Edit</th>
+      			<th scope="col">Delete</th>
+      		</tr>
+      	</thead>
+      	<tbody>
+      		<tr>
+      			<th><?php echo $row['name']?></th>
+      			<th><a href="<?php echo $row['link']?>" target="_blank"><?php echo $row['link']?></a></th>
+      			<th><a href="edit.php?id=<?php echo $row['id']?>">edit</a></th>
+      			<th><a href="delete.php?id=<?php echo $row['id']?>">delete</a></th>
+      		</tr>
+      	</tbody>
+      </table>
 <?php } ?>
 
 
