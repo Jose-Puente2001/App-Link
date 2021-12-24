@@ -8,18 +8,3 @@
 	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 	<meta charset="utf-8">
 </head>
-<nav class="navbar navbar-expand-lg navbar-light bg-dark bg-gradient">
-	<div class="container-fluid">
-		<a class="navbar-brand text-light" href="#">APP - LINK</a>
-		 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-         <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link text-light" href="#">Logout</a>
-        </li>
-    </ul>
-	</div>
-</nav>
-<body>

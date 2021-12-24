@@ -33,6 +33,7 @@ if(isset($_GET['id'])){
 
 
 <?php require_once 'includes/header.php'; ?>
+<?php require_once 'includes/navigation.php'; ?>
 <div>
 	<form action="edit.php?id=<?php echo $_GET['id']; ?>" method="POST">
 		<input type="text" name="name" value= "<?php echo $name ?>" placeholder="name" />
