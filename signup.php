@@ -19,8 +19,8 @@
  ?>
 <?php require_once 'includes/header.php'; ?>
 <div>
-	<h1>Sigup</h1>
-	or<a href="login.php">Login</a>
+	<h1>sign up</h1>
+	or<a href="login.php">sign in</a>
 	<form action="signup.php" method="post">
    <input type="text" name="name" placeholder="Enter your name" />
    <input type="password" name="password" placeholder="Enter your password" />
