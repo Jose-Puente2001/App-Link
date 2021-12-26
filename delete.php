@@ -11,5 +11,5 @@ if(isset($_GET['id'])){
     $_SESSION['message'] = "Note removed successfully";
     $_SESSION['message_type'] = "danger";
 
-	header("Location: index.php");
+	header("Location: home.php");
 }

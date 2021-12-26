@@ -24,7 +24,7 @@ if(isset($_GET['id'])){
 		mysqli_query($connection, $query);
 		$_SESSION['message'] = "Note updated successfully";
 	    $_SESSION['message_type'] = "warning";
-		header("Location: index.php");
+		header("Location: home.php");
 
 	}
 }
