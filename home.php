@@ -9,10 +9,16 @@
   <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
 </div>
 <?php session_unset(); } ?>
+
+
 <div class="text-center">
 	<form action="save.php" method="POST">
-		<input type="text" name="name" placeholder="name" />
-		<input type="url" name="url" placeholder="url" />
+    <div class="mb-4">
+		<input type="text" class="form-control" name="name" placeholder="name" />
+   </div>
+   <div class="mb-4">
+		<input type="url" class="form-control" name="url" placeholder="url" />
+    </div>
 		<button class="btn btn-danger" name="save_app">Add Link</button>
 	</form>
 </div>

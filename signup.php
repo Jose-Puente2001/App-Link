@@ -31,7 +31,7 @@
    <label for="password" class="form-label">Password</label>
    <input type="password" class="form-control" name="password" placeholder="Enter your password" />
    </div>
-    <input type="submit"  class="btn btn-primary" name="send" />
+    <button class="btn btn-primary" name="send" />Join Weblink</button>
   </form>
 </div>
 </div>

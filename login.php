@@ -62,7 +62,7 @@ or<a href="signup.php">sign up</a>
 <label for="exampleInput2" class="form-label">Password</label>
 <input type="password" class="form-control"  name="password" placeholder="Enter your password" />
 </div>
-<input type="submit" class="btn btn-primary" name="send">
+<button class="btn btn-primary" name="send">sign in</button>
 </form>
 </div>
 </div>
