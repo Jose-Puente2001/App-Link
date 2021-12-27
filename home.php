@@ -23,6 +23,7 @@
 	</form>
 </div>
 </main>
+<div class="table-responsive-sm p-4">
 <table class="table table-bordered table-hover">
       	<thead>
       		<tr>
@@ -48,7 +49,7 @@ while($row = mysqli_fetch_array($result)){?>
 <?php } ?>
  	</tbody>
  </table>
-
+</div>
 
 
 <?php require_once 'includes/footer.php'; ?>

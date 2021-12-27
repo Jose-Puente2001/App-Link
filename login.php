@@ -45,14 +45,16 @@ if($num == 1){
 <div class="container">
 <div class="row">
 <div class="col">
+<div class="text-center">
 <h1>sign in</h1>
+or <a href="signup.php">sign up</a>
 <?php if (isset($_SESSION['login_message'])){ ?>
 <div class="alert alert-<?= $_SESSION['login_message_type']; ?> alert-dismissible fade show" role="alert">
 <?=$_SESSION['login_message'];?>
 <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
 </div>
 <?php session_unset(); } ?>
-or<a href="signup.php">sign up</a>
+</div>
 <form action="login.php"  method="post">
 <div class="mb-4">
 <label for="exampleInput1" class="form-label">Name</label>

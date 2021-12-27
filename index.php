@@ -4,8 +4,10 @@
 
 <div class="container p-5">
 <div class="row">
+<div class="mb-5">
 <h1>Welcome to Weblink your link application</h1>
-<span>your ideal site to store the links of the websites they visit frequently</span>
+<span>your ideal site to store the links of the websites they visit frequently</span>	
+</div>
 <img src="img/img-app.jpg" class="img-fluid" />
 <div class="d-flex mb-4 p-5 justify-content-around alig-items-center">
 <a href="login.php" class="btn btn-primary">sign in</a>
