@@ -38,18 +38,17 @@
      <tbody>
 <?php
 
-
 $query = "SELECT * FROM link";
 $result = mysqli_query($connection, $query);
 
-while($row = mysqli_fetch_array($result)){?>
+while($row = mysqli_fetch_array($result)):?>
           <tr>
             <th><?php echo $row['name']?></th>
             <th><a href="<?php echo $row['link']?>" target="_blank"><?php echo $row['link']?></a></th>
             <th><a href="edit.php?id=<?php echo $row['id']?>"><i class="fas fa-edit"></i></a></th>
             <th><a href="delete.php?id=<?php echo $row['id']?>"><i class="fas fa-trash-alt"></i></a></th>
           </tr>
-<?php } ?>
+<?php endwhile; ?>
   </tbody>
  </table>
 </div>
