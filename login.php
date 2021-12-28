@@ -8,7 +8,7 @@ if(isset($_POST['send'])){
 $username = $_POST['name'];
 $userpassword = $_POST['password'];
 
-$query = "SELECT * FROM users where name='$username'";
+$query = "SELECT * FROM users WHERE name='$username'";
 $result = mysqli_query($connection, $query);
 $num = mysqli_num_rows($result);
 

@@ -36,7 +36,8 @@
           </tr>
         </thead>
      <tbody>
-<?php 
+<?php
+
 
 $query = "SELECT * FROM link";
 $result = mysqli_query($connection, $query);

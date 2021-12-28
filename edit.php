@@ -21,7 +21,7 @@ if(isset($_GET['id'])){
         $id = $_GET['id'];
 		$name = $_POST['name'];
 		$link = $_POST['url'];
-		$query = "UPDATE link set name = '$name' link = '$link' WHERE id=$id";
+		$query = "UPDATE link SET name = '$name', link = '$link' WHERE id=$id";
 		mysqli_query($connection, $query);
 		header("Location: home.php");
 
