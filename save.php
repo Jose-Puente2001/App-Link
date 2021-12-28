@@ -15,8 +15,5 @@ if(isset($_POST['save_app'])){
    	   die('fallied');
    }
    
-   $_SESSION['message'] = "Note created successfully";
-   $_SESSION['message_type'] = "success";
-
    header("Location: home.php");
 }
