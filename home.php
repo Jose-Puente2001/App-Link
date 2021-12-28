@@ -12,15 +12,23 @@
 
 
 <div class="text-center">
-	<form action="save.php" method="POST">
+  <?php 
+
+   $idusers = $_SESSION['id'];
+   $query = "SELECT id, name FROM users WHERE id='$idusers'";
+   $result = mysqli_query($connection, $query);
+   while($row= mysqli_fetch_array($result)){?>
+      <h1>Welcome <?php echo $row['name']; ?></h1>
+  <?php } ?>
+    <form action="save.php" method="POST">
     <div class="mb-4">
-		<input type="text" class="form-control" name="name" placeholder="name" />
+    <input type="text" class="form-control" name="name" placeholder="name" />
    </div>
    <div class="mb-4">
-		<input type="url" class="form-control" name="url" placeholder="url" />
+    <input type="url" class="form-control" name="url" placeholder="url" />
     </div>
-		<button class="btn btn-danger" name="save_app">Add Link</button>
-	</form>
+    <button class="btn btn-danger" name="save_app">Add Link</button>
+  </form>
 </div>
 </main>
 <div class="table-responsive-sm p-4">

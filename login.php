@@ -19,6 +19,7 @@ if($num == 1){
        if(password_verify($userpassword, $row['password'])){
        	     $_SESSION['loggedin'] = true;
              $_SESSION['username'] = $username;
+             $_SESSION['id'] = $row['id'];
        	     header("Location: home.php");
        }
     
