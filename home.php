@@ -26,7 +26,9 @@
 </div>
 </main>
 <div class="table-responsive-sm p-4">
-<a href="report.php">Report PDF</a>
+<div class="mb-4">
+<a href="report.php" class="btn btn-primary">Downloads PDF</a>
+</div>
 <table class="table table-bordered table-hover">
         <thead>
           <tr>

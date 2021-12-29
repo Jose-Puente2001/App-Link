@@ -4,18 +4,30 @@
 ob_start();
 ?>
 
-
 <!DOCTYPE html>
 <html>
 <head>
-  <title>document</title>
+  <title></title>
 </head>
 <body>
+<?php 
+
+$idusers = $_SESSION['id'];
+$query = "SELECT id, name FROM users WHERE id='$idusers'";
+$result = mysqli_query($connection, $query);
+
+while ($row = mysqli_fetch_array($result)): ?>
+
+<h1>User: <?php echo $row['name']; ?> </h1>
+
+<?php endwhile; ?>
+
+
 <table>
         <thead>
           <tr>
-            <th scope="col">Name</th>
-            <th scope="col">Link</th>
+            <th>Name</th>
+            <th>Link</th>
           </tr>
         </thead>
      <tbody>
@@ -45,7 +57,7 @@ $dompdf = new Dompdf();
 $dompdf->loadHtml(utf8_decode($html));
 $dompdf->setPaper('letter');
 $dompdf->render();
-$dompdf->stream("document.pdf", array("Attachment" => false));
+$dompdf->stream("document.pdf", array("Attachment" => true));
 
 
  ?>
