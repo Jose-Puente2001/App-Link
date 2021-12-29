@@ -26,6 +26,7 @@
 </div>
 </main>
 <div class="table-responsive-sm p-4">
+<a href="report.php">Report PDF</a>
 <table class="table table-bordered table-hover">
         <thead>
           <tr>
