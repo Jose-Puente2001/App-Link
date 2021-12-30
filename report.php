@@ -33,7 +33,8 @@ while ($row = mysqli_fetch_array($result)): ?>
      <tbody>
 <?php
 
-$query = "SELECT * FROM link";
+$user_id = $_SESSION['id'];
+$query = "SELECT * FROM link WHERE user_id='$user_id'";
 $result = mysqli_query($connection, $query);
 
 while($row = mysqli_fetch_array($result)):?>
@@ -57,7 +58,7 @@ $dompdf = new Dompdf();
 $dompdf->loadHtml(utf8_decode($html));
 $dompdf->setPaper('letter');
 $dompdf->render();
-$dompdf->stream("document.pdf", array("Attachment" => true));
+$dompdf->stream("document.pdf", array("Attachment" => false));
 
 
  ?>

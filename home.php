@@ -41,7 +41,8 @@
      <tbody>
 <?php
 
-$query = "SELECT * FROM link";
+$user_id = $_SESSION['id'];
+$query = "SELECT * FROM link WHERE user_id='$user_id'";
 $result = mysqli_query($connection, $query);
 
 while($row = mysqli_fetch_array($result)):?>

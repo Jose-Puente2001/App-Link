@@ -6,9 +6,10 @@ if(isset($_POST['save_app'])){
 
 	$name = $_POST['name'];
 	$link = $_POST['url'];
+	$user_id = $_SESSION['id'];
+   
 
-
-   $query = "INSERT INTO link(name, link) VALUES ('$name', '$link')";
+   $query = "INSERT INTO link(name, link, user_id) VALUES ('$name', '$link', '$user_id')";
    $result = mysqli_query($connection, $query);
 
    if(!result){
