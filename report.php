@@ -58,7 +58,7 @@ $dompdf = new Dompdf();
 $dompdf->loadHtml(utf8_decode($html));
 $dompdf->setPaper('letter');
 $dompdf->render();
-$dompdf->stream("document.pdf", array("Attachment" => false));
+$dompdf->stream("document.pdf", array("Attachment" => true));
 
 
  ?>
