@@ -7,7 +7,7 @@ if(isset($_POST['send'])){
 
 $username = $_POST['name'];
 $userpassword = $_POST['password'];
-$id_emp="";
+
 
 $query = "SELECT * FROM users WHERE name='$username'";
 $result = mysqli_query($connection, $query);

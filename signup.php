@@ -10,9 +10,7 @@
   	$password = password_hash($_POST['password'], PASSWORD_BCRYPT);
     $query = "INSERT INTO users(name, password) VALUES ('$name', '$password')";
     $result = mysqli_query($connection, $query);
-    $_SESSION['signup_message'] = "user created successfully";
-    $_SESSION['signup_message_type'] = "success";
-    header("Location: signup.php");
+    header("Location: login.php");
      
   }
 
@@ -22,14 +20,7 @@
 <div class="row">
 <div class="col">
 <div class="text-center">
-<h1>sign up</h1>
-  or <a href="login.php">sign in</a>
- <?php if(isset($_SESSION['signup_message'])) { ?>
- <div class="alert alert-<?= $_SESSION['signup_message_type']; ?> alert-dismissible fade show" role="alert">
-<?=$_SESSION['signup_message'];?>
-<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-</div>
-<?php session_unset(); } ?>  
+<h1>sign up</h1> 
 </div>
 <form action="signup.php" method="post">
 <div class="mb-4">
